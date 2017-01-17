@@ -11,7 +11,7 @@ export class SharedService {
   constructor() {
     this.loginUser = '';
     this.loginTime = new Date();
-    this.apiHost = 'http://localhost:4200/'
+    this.apiHost = "http://localhost:4200/api/";
     this.tokenKey = '';
   }
 }

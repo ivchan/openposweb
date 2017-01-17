@@ -1,3 +1,10 @@
-<p>
-  producttype works!
-</p>
+<table class="productTypeTable">
+  <tr>
+    <th style="display:none">Key</th><th>Name</th><th>Description</th>
+  </tr>
+  <tr *ngFor="let row of lstProductType">
+    <td style="display:none">{{row.productTypeKey}}</td>
+    <td>{{row.productTypeName}}</td>
+    <td>{{row.description}}</td>
+  </tr>
+</table>

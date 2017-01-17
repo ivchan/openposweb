@@ -1,0 +1,12 @@
+.productTypeTable {
+  border-width: medium;
+  border-style: dotted;
+  padding: 5px;
+  background-color: cornflowerblue;
+}
+
+.productTypeTable td {
+  border-style: solid;
+  border-width: thin;
+  padding: 5px;
+}

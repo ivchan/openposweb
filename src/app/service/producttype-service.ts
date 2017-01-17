@@ -1,8 +1,8 @@
 import {Injectable} from "@angular/core";
 import {Http, Headers, RequestOptions, Response} from "@angular/http";
 import {Observable} from "rxjs";
-import {IProductType} from "../model/producttype.model";
-import {SharedService} from "./SharedService.service";
+import {IProductType} from "../model/producttype-model";
+import {SharedService} from "./sharedservice-service";
 /**
  * Created by ivanchan on 16/1/2017.
  */
@@ -14,7 +14,7 @@ export class ProductTypeService {
 
   constructor(private _http: Http, private _sharedService: SharedService) {
     this.apiPath = 'producttype';
-    this.apiUrl = '';
+    this.apiUrl = _sharedService.apiHost + this.apiPath;
   }
 
   getProductType(productType: string): Observable<IProductType> {
