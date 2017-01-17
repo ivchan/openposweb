@@ -1,10 +1,14 @@
 <table class="productTypeTable">
   <tr>
-    <th style="display:none">Key</th><th>Name</th><th>Description</th>
+    <th style="display:none">Key</th><th>Name</th><th>Description</th><th></th>
   </tr>
   <tr *ngFor="let row of lstProductType">
     <td style="display:none">{{row.productTypeKey}}</td>
-    <td>{{row.productTypeName}}</td>
-    <td>{{row.description}}</td>
+    <td><input type="text" [(ngModel)]="row.productTypeName" /></td>
+    <td><input type="text" [(ngModel)]="row.description" /></td>
+    <td>
+      <input type="button" (click)="saveRow()" value="save" />
+      <input type="button" (click)="cancelRow()" value="cancel" />
+    </td>
   </tr>
 </table>
