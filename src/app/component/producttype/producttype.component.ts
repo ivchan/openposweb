@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {SharedService} from "../../service/sharedservice-service";
 import {ProductTypeService} from "../../service/producttype-service";
 import {IProductType} from "../../model/producttype-model";
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: 'app-producttype',

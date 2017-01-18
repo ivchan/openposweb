@@ -1,5 +1,26 @@
-<div class="top-menu">
-  <a routerLink="/">Home</a>
-  <a routerLink="/producttype">Product Type</a>
+<div class="full-page">
+  <div class="top-menu">
+    <span class="company-name">Demo Retail POS</span>
+    <!--<a routerLink="/producttype">Product Type</a>-->
+    <span class="login-user">Ivan Chan</span>
+  </div>
+  <div class="side-menu">
+    <md-sidenav #start mode="side" opened="true" class="side-nav">
+      <md-list>
+        <md-list-item>
+          <div>
+            <a [routerLink]="['/producttype']">Product Type</a>
+          </div>
+        </md-list-item>
+        <md-list-item>
+          <div>
+            <a [routerLink]="['/customer']">Customer</a>
+          </div>
+        </md-list-item>
+      </md-list>
+    </md-sidenav>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
 </div>
-<router-outlet></router-outlet>
