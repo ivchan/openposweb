@@ -14,7 +14,7 @@ export class CustomerService {
 
   constructor(private _http: Http, private _sharedService: SharedService) {
     this.apiPath = 'customer';
-    this.apiUrl = _sharedService.apiHost + this.apiPath;
+    this.apiUrl = _sharedService.setting.apiHost + this.apiPath;
   }
 
   getCustomer(customer: string): Observable<ICustomer> {

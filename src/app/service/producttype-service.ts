@@ -14,7 +14,7 @@ export class ProductTypeService {
 
   constructor(private _http: Http, private _sharedService: SharedService) {
     this.apiPath = 'producttype';
-    this.apiUrl = _sharedService.apiHost + this.apiPath;
+    this.apiUrl = _sharedService.setting.apiHost + this.apiPath;
   }
 
   getProductType(productType: string): Observable<IProductType> {

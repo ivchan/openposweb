@@ -1,17 +1,23 @@
+import {ILoggedUser} from "../model/loggeduser-model";
+import {ISettings} from "../model/settings-model";
+import {Injectable} from "@angular/core";
 /**
  * Created by ivanchan on 16/1/2017.
  */
 
+@Injectable()
 export class SharedService {
-  loginUser: string;
-  loginTime: Date;
-  apiHost: string;
-  tokenKey: string;
+  public loggedUser: ILoggedUser;
+  public setting: ISettings;
 
   constructor() {
-    this.loginUser = '';
-    this.loginTime = new Date();
-    this.apiHost = "http://localhost:4200/api/";
-    this.tokenKey = '';
+    this.loggedUser = <ILoggedUser>{};
+    this.setting = <ISettings>{};
+    this.loggedUser.loginUser = '';
+    this.loggedUser.loginUserName = "Demo Account";
+    this.loggedUser.loginUserRole = "Retail Shop Manager";
+    this.loggedUser.loginTime = new Date();
+    this.setting.apiHost = "http://localhost:4200/api/";
+    this.setting.tokenKey = '';
   }
 }

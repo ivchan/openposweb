@@ -14,7 +14,6 @@ export class ProductTypeComponent implements OnInit {
   private lstProductType: Array<IProductType>;
 
   constructor(private _sharedService: SharedService, private _productTypeService: ProductTypeService) {
-
   }
 
   ngOnInit() {
