@@ -1,23 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-import {SharedService} from "../service/sharedservice-service";
-import {CustomerService} from "../service/customer-service";
-import {ICustomer} from "../model/customer-model";
+import {SharedService} from "../../service/sharedservice-service";
+import {CustomerService} from "../../service/customer-service";
+import {ICustomer} from "../../model/customer-model";
 
 @Component({
   selector: 'app-customer-list',
-  templateUrl: './customer-list.component.html',
-  styleUrls: ['./customer-list.component.css']
+  templateUrl: 'customer-list.component.html',
+  styleUrls: ['customer-list.component.css'],
+  providers: [SharedService, CustomerService]
 })
+
 export class CustomerListComponent implements OnInit {
   private lstCustomer: Array<ICustomer>;
 
-  constructor() { }
+  constructor(private _sharedService: SharedService, private _customerService: CustomerService) {
 
-  ngOnInit() {
-    //this.getCustomerList();
   }
 
-  /*
+  ngOnInit() {
+    this.getCustomerList();
+  }
+
   public getCustomerList(): void {
     var _self = this;
     this._customerService.listCustomers()
@@ -27,5 +30,4 @@ export class CustomerListComponent implements OnInit {
         console.log("ERROR");
       });
   }
-  */
 }

@@ -15,7 +15,7 @@
     <nav class="navbar-color">
       <div class="nav-wrapper">
         <ul class="left">
-          <li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="images/materialize-logo.png" alt="materialize logo" style="display: none;"></a> <span class="logo-text">Materialize</span></h1></li>
+          <li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="images/materialize-logo.png" alt="materialize logo"></a> <span class="logo-text">Materialize</span></h1></li>
         </ul>
         <div class="header-search-wrapper hide-on-med-and-down">
           <i class="mdi-action-search"></i>
@@ -124,14 +124,20 @@
         <!-- Sell -->
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
-            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-editor-attach-money"></i>Sell</a>
+            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-editor-attach-money"></i>Sales</a>
               <div class="collapsible-body">
                 <ul>
                   <li>
-                    <a routerLink="/producttype" routerLinkActive="active">Product Type</a>
+                    <a routerLink="/" routerLinkActive="active">Sell</a>
                   </li>
                   <li>
-                    <a routerLink="/customer" routerLinkActive="active">Customer</a>
+                    <a routerLink="/customer" routerLinkActive="active">Open/Close</a>
+                  </li>
+                  <li>
+                    <a routerLink="/customer" routerLinkActive="active">Sales History</a>
+                  </li>
+                  <li>
+                    <a routerLink="/customer" routerLinkActive="active">Cash Management</a>
                   </li>
                 </ul>
               </div>
@@ -140,22 +146,7 @@
         </li>
         <!-- /sell -->
         <!-- Ledger -->
-        <li class="no-padding">
-          <ul class="collapsible collapsible-accordion">
-            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-history"></i>Sales Ledger</a>
-              <div class="collapsible-body">
-                <ul>
-                  <li>
-                    <a routerLink="/producttype" routerLinkActive="active">Product Type</a>
-                  </li>
-                  <li>
-                    <a routerLink="/customer" routerLinkActive="active">Customer</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </li>
+        <li class="bold"><a routerLink="/" class="waves-effect waves-cyan"><i class="mdi-action-history"></i>Sales Ledger</a>
         <!-- /Ledger -->
         <!-- Reporting -->
         <li class="no-padding">
@@ -164,10 +155,10 @@
               <div class="collapsible-body">
                 <ul>
                   <li>
-                    <a routerLink="/producttype" routerLinkActive="active">Product Type</a>
+                    <a routerLink="/" routerLinkActive="active">Sales Report</a>
                   </li>
                   <li>
-                    <a routerLink="/customer" routerLinkActive="active">Customer</a>
+                    <a routerLink="/" routerLinkActive="active">Inventory Reports</a>
                   </li>
                 </ul>
               </div>
@@ -182,10 +173,19 @@
               <div class="collapsible-body">
                 <ul>
                   <li>
-                    <a routerLink="/producttype" routerLinkActive="active">Product Type</a>
+                    <a routerLink="/" routerLinkActive="active">Products</a>
                   </li>
                   <li>
-                    <a routerLink="/customer" routerLinkActive="active">Customer</a>
+                    <a routerLink="/" routerLinkActive="active">Inventory Control</a>
+                  </li>
+                  <li>
+                    <a routerLink="/" routerLinkActive="active">Product Types</a>
+                  </li>
+                  <li>
+                    <a routerLink="/" routerLinkActive="active">Suppliers</a>
+                  </li>
+                  <li>
+                    <a routerLink="/" routerLinkActive="active">Brands</a>
                   </li>
                 </ul>
               </div>
@@ -200,10 +200,10 @@
               <div class="collapsible-body">
                 <ul>
                   <li>
-                    <a routerLink="/producttype" routerLinkActive="active">Product Type</a>
+                    <a routerLink="/customer" routerLinkActive="active">Customers</a>
                   </li>
                   <li>
-                    <a routerLink="/customer" routerLinkActive="active">Customer</a>
+                    <a routerLink="/" routerLinkActive="active">Customer Group</a>
                   </li>
                 </ul>
               </div>
@@ -218,10 +218,10 @@
               <div class="collapsible-body">
                 <ul>
                   <li>
-                    <a routerLink="/producttype" routerLinkActive="active">Product Type</a>
+                    <a routerLink="/" routerLinkActive="active">General Setup</a>
                   </li>
                   <li>
-                    <a routerLink="/customer" routerLinkActive="active">Customer</a>
+                    <a routerLink="/" routerLinkActive="active">User Account</a>
                   </li>
                 </ul>
               </div>

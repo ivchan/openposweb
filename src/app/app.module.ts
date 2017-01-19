@@ -9,13 +9,17 @@ import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { ProductTypeComponent } from './component/producttype/producttype.component';
 import {ProductTypeService} from "./service/producttype-service";
-import { CustomerListComponent } from './customer-list/customer-list.component';
+import { CustomerListComponent } from './component/customer-list/customer-list.component';
+import { CustomerAddComponent } from './component/customer-add/customer-add.component';
+import { CustomerEditComponent } from './component/customer-edit/customer-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductTypeComponent,
-    CustomerListComponent
+    CustomerListComponent,
+    CustomerAddComponent,
+    CustomerEditComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +34,14 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
       {
         path: 'customer',
         component: CustomerListComponent
+      },
+      {
+        path: 'customeradd',
+        component: CustomerAddComponent
+      },
+      {
+        path: 'customeredit',
+        component: CustomerEditComponent
       }
     ])
   ],
