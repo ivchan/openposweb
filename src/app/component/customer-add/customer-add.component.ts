@@ -17,9 +17,6 @@ export class CustomerAddComponent implements OnInit {
 
   ngOnInit() {
     this.customer = <ICustomer>{};
-    this.customer.customerCode = "ivanchan";
-    this.customer.firstName = "Ivan";
-    this.customer.lastName = "Chan";
   }
 
   public saveCustomer(): void {

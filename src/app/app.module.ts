@@ -27,22 +27,10 @@ import { CustomerEditComponent } from './component/customer-edit/customer-edit.c
     HttpModule,
     MaterialModule.forRoot(),
     RouterModule.forRoot([
-      {
-        path: 'producttype',
-        component: ProductTypeComponent
-      },
-      {
-        path: 'customer',
-        component: CustomerListComponent
-      },
-      {
-        path: 'customeradd',
-        component: CustomerAddComponent
-      },
-      {
-        path: 'customeredit',
-        component: CustomerEditComponent
-      }
+      { path: 'producttype', component: ProductTypeComponent },
+      { path: 'customer', component: CustomerListComponent },
+      { path: 'customeradd', component: CustomerAddComponent },
+      { path: 'customeredit/:id', component: CustomerEditComponent }
     ])
   ],
   providers: [
