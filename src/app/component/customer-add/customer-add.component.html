@@ -1,3 +1,184 @@
-<p>
-  customer-add works!
-</p>
+<div class="col s12">
+  <div class="card-panel">
+    <h4 class="header2">Customer Registration</h4>
+    <div class="row">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="mdi-action-account-circle prefix"></i>
+          <input id="txtCustomerCode" type="text" class="validate" [(ngModel)]="customer.customerCode" />
+          <label for="txtCustomerCode">
+            Customer Code
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <i class="mdi-action-perm-contact-cal prefix"></i>
+          <input id="txtFirstName" type="text" class="validate" [(ngModel)]="customer.firstName" />
+          <label for="txtFirstName">
+            First Name
+          </label>
+        </div>
+
+        <div class="input-field col s12 m6">
+          <i class="mdi-action-perm-contact-cal prefix"></i>
+          <input id="txtLastName" type="text" class="validate" [(ngModel)]="customer.lastName" />
+          <label for="txtLastName">
+            Last Name
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="mdi-action-work prefix"></i>
+          <input id="txtCompany" type="text" class="validate" [(ngModel)]="customer.companyName" />
+          <label for="txtCompany">
+            Company
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <i class="mdi-communication-phone prefix"></i>
+          <input id="txtPhoneNo" type="text" class="validate" [(ngModel)]="customer.phoneNo" />
+          <label for="txtPhoneNo">
+            Phone No
+          </label>
+        </div>
+
+        <div class="input-field col s12 m6">
+          <i class="mdi-action-settings-cell prefix"></i>
+          <input id="txtMobileNo" type="text" class="validate" [(ngModel)]="customer.mobileNo" />
+          <label for="txtMobileNo">
+            Mobile No
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <i class="mdi-action-print prefix"></i>
+          <input id="txtFax" type="text" class="validate" [(ngModel)]="customer.faxNo" />
+          <label for="txtFax">
+            Fax
+          </label>
+        </div>
+
+        <div class="input-field col s12 m6">
+          <i class="mdi-communication-email prefix"></i>
+          <input id="txtEmail" type="text" class="validate">
+          <label for="txtEmail">
+            Email
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="mdi-av-web prefix"></i>
+          <input id="txtWebSite" type="text" class="validate" [(ngModel)]="customer.webSite" />
+          <label for="txtWebSite">
+            Web Site
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="mdi-action-home prefix"></i>
+          <input id="txtHomeAddr1" type="text" class="validate" [(ngModel)]="customer.homeAddr1" />
+          <label for="txtHomeAddr1">
+            Home Address 1
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="mdi-action-home prefix"></i>
+          <input id="txtHomeAddr2" type="text" class="validate" [(ngModel)]="customer.homeAddr2" />
+          <label for="txtHomeAddr2">
+            Home Address 2
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="mdi-action-home prefix"></i>
+          <input id="txtHomeAddr3" type="text" class="validate" [(ngModel)]="customer.homeAddr3" />
+          <label for="txtHomeAddr3">
+            Home Address 3
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="mdi-action-home prefix"></i>
+          <input id="txtHomeAddr4" type="text" class="validate" [(ngModel)]="customer.homeAddr4" />
+          <label for="txtHomeAddr4">
+            Home Address 4
+          </label>
+        </div>
+      </div>
+
+      <!--
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="mdi-action-account-circle prefix"></i>
+          <input id="txtPostAddr1" type="text" class="validate">
+          <label for="txtPostAddr1">
+            Post Address 1
+          </label>
+        </div>
+
+        <div class="input-field col s6">
+          <i class="mdi-action-account-circle prefix"></i>
+          <input id="txtPostAddr2" type="text" class="validate">
+          <label for="txtPostAddr2">
+            Post Address 2
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="mdi-action-account-circle prefix"></i>
+          <input id="txtPostAddr3" type="text" class="validate">
+          <label for="txtPostAddr3">
+            Post Address 3
+          </label>
+        </div>
+
+        <div class="input-field col s6">
+          <i class="mdi-action-account-circle prefix"></i>
+          <input id="txtPostAddr4" type="text" class="validate">
+          <label for="txtPostAddr4">
+            Post Address 4
+          </label>
+        </div>
+      </div>
+      -->
+
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="mdi-communication-comment prefix"></i>
+          <textarea id="txtRemark" class="materialize-textarea" [(ngModel)]="customer.remarks"></textarea>
+          <label for="txtRemark">
+            Remark
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <button class="btn waves-effect waves-light right" (click)="saveCustomer();">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
